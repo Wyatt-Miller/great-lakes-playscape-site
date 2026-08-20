@@ -101,6 +101,7 @@ section{padding:76px 0}
 .party-flex h2{font-size:clamp(1.8rem,4vw,2.6rem)}
 .party-flex p{font-size:1.1rem;opacity:.96;margin:14px 0 24px}
 .party-card{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);border-radius:var(--radius);padding:30px;backdrop-filter:blur(4px)}
+.party-photo{width:100%;height:170px;object-fit:cover;display:block;border-radius:14px;margin-bottom:20px}
 .party-card .row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.25);font-weight:700}
 .party-card .row:last-child{border-bottom:none}
 @media(max-width:720px){.party-flex{grid-template-columns:1fr}}
