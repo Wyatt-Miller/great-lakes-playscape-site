@@ -41,7 +41,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(251,250,246,.9);backdrop
 .nav-links a{text-decoration:none;font-weight:700;color:var(--deep);font-size:.98rem}
 .nav-links a.cta{background:var(--deep);color:#fff;padding:10px 20px;border-radius:999px}
 .nav-toggle{display:none;background:none;border:none;font-size:1.6rem;color:var(--deep);cursor:pointer}
-@media(max-width:760px){
+@media(max-width:1080px){
   .nav-links{display:none}
   .nav-toggle{display:block}
   .nav-links.open{display:flex;position:absolute;top:70px;right:4%;left:4%;flex-direction:column;background:#fff;padding:18px;border-radius:18px;box-shadow:var(--shadow);gap:16px}
