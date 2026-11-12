@@ -115,6 +115,7 @@ section{padding:76px 0}
 .party-card .row small{display:block;font-weight:600;font-size:.82rem;opacity:.85}
 .party-card .row-head{padding-top:0;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;opacity:.85}
 .party-card .row:last-child{border-bottom:none}
+.party-ctas{display:flex;gap:12px;flex-wrap:wrap}
 .party-flex .party-fine{font-size:.92rem;opacity:.9;margin:18px 0 0}
 .party-fine a{color:#fff;font-weight:700}
 @media(max-width:720px){.party-flex{grid-template-columns:1fr}}
