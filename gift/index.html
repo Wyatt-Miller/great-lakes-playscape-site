@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You for Your Gift — Great Lakes Playscape</title>
+<meta name="description" content="Your Great Lakes Playscape gift voucher is on its way. Here's how to give it and how to redeem it.">
+<!-- Post-purchase page that GymMaster redirects to after a gift voucher sale; keep it out of search results. -->
+<meta name="robots" content="noindex">
+
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16.png?v=2">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png?v=2">
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body class="gift-page">
+
+<header>
+  <div class="wrap nav">
+    <a href="../" class="brand">
+      <img class="logo" src="../images/logo.png" alt="Great Lakes Playscape" width="586" height="274">
+    </a>
+    <a href="../" class="gift-home-link">Back to home</a>
+  </div>
+</header>
+
+<section class="gift-hero">
+  <div class="wrap">
+    <span class="eyebrow">Gift voucher</span>
+    <h1>Thank you for giving the gift of play!</h1>
+    <p>Your gift voucher code is on its way to your email. Here's what happens next.</p>
+  </div>
+</section>
+
+<section class="gift-steps-section">
+  <div class="wrap">
+    <ol class="gift-steps">
+      <li>
+        <span class="step-num">1</span>
+        <div>
+          <h2>Check your email</h2>
+          <p>Your voucher code should arrive within a few minutes. If you don't see it, check your spam or promotions folder.</p>
+        </div>
+      </li>
+      <li>
+        <span class="step-num">2</span>
+        <div>
+          <h2>Wrap it up</h2>
+          <p>Print the email, or print the gift card below and write the code on it. Tuck it in a card or under the tree.</p>
+        </div>
+      </li>
+      <li>
+        <span class="step-num">3</span>
+        <div>
+          <h2>They redeem it online</h2>
+          <p>Your recipient creates their account, signs our waiver, adds their kids, and enters the code at checkout. No need to be there in person.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="gift-redeem">
+      <h2>How to redeem</h2>
+      <div class="gift-redeem-grid">
+        <div class="gift-redeem-card">
+          <h3>Holiday Punch Card</h3>
+          <p class="gift-redeem-sub">$59.50 voucher · 8 visits</p>
+          <p>Sign up for the Holiday Gift punch card and enter the voucher code at checkout. The total comes to $0.</p>
+          <a href="../redeem/" class="btn btn-coral">Redeem a punch card</a>
+        </div>
+        <div class="gift-redeem-card">
+          <h3>Any other amount</h3>
+          <p class="gift-redeem-sub">Credit toward anything we sell</p>
+          <p>Log in or sign up, choose a membership or pass, and apply the voucher code at checkout.</p>
+          <a href="https://greatlakesplayscape.gymmasteronline.com/portal" class="btn btn-outline" target="_blank" rel="noopener">Go to sign-up</a>
+        </div>
+      </div>
+      <p class="gift-fine">Gift vouchers never expire. Questions? Email <a href="mailto:hello@greatlakesplayscape.com">hello@greatlakesplayscape.com</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="gift-print-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Printable gift card</span>
+      <h2>Print it, write the code, give it</h2>
+    </div>
+
+    <div class="gift-card" id="giftCard">
+      <img class="gift-card-logo" src="../images/logo.png" alt="Great Lakes Playscape" width="586" height="274">
+      <p class="gift-card-kicker">A gift for you!</p>
+      <p class="gift-card-title">Visits to Great Lakes Playscape</p>
+      <div class="gift-card-fields">
+        <div class="gift-card-field"><span>To</span><span class="line"></span></div>
+        <div class="gift-card-field"><span>From</span><span class="line"></span></div>
+        <div class="gift-card-field"><span>Voucher code</span><span class="line"></span></div>
+      </div>
+      <div class="gift-card-redeem">
+        <strong>To redeem:</strong> go to <strong>greatlakesplayscape.com/redeem</strong>, create your account, and enter the voucher code at checkout.
+      </div>
+      <p class="gift-card-foot">303 Broadway St, Cloquet, MN · Open daily 8 AM – 8 PM · Voucher never expires</p>
+    </div>
+
+    <div class="gift-print-row">
+      <button type="button" class="btn btn-sun" id="printCard">Print gift card</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom">
+      © 2026 Great Lakes Playscape LLC · Cloquet, Minnesota
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('printCard').addEventListener('click', function () {
+    window.print();
+  });
+</script>
+</body>
+</html>
