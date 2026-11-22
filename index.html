@@ -54,12 +54,13 @@
 }
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=20261121h">
 </head>
 <body>
 
 <!-- ============ HEADER ============ -->
 <header>
+  <div class="opening-bar"><span>Coming soon</span> Opening by Jan 1, 2027</div>
   <div class="wrap nav">
     <div class="brand-group">
       <a href="#top" class="brand">
@@ -77,10 +78,10 @@
     </div>
     <nav class="nav-links" id="navLinks">
       <a href="#play">The Space</a>
-      <a href="#about">Our Story</a>
       <a href="#pricing">Pricing</a>
       <a href="#hours">Hours</a>
-      <a href="#parties">Parties</a>
+      <a href="parties/">Parties</a>
+      <a href="faq/">FAQ</a>
       <a href="#visit">Contact Us</a>
       <a href="#join" class="cta">Sign Up</a>
     </nav>
@@ -91,14 +92,23 @@
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
   <span class="float a"></span><span class="float b"></span><span class="float c"></span>
-  <div class="wrap">
+  <div class="wrap hero-grid">
+   <div class="hero-main">
     <a href="#sale" class="badge badge-sale">Black Friday / Opening Sale: 15% off punch cards</a>
-    <h1>An indoor playground for kids in Cloquet.</h1>
-    <p class="lede">Somewhere for kids to climb and run around no matter what the weather's doing. We're a local family, and we built this for families around here.</p>
+    <h1>A self-service indoor playscape.</h1>
+    <p class="lede">Welcome to your new favorite place to play, have parties and connect with community. Located in Cloquet, MN, we are happy to offer an open play space for your family.</p>
     <div class="cta-row">
-      <a href="https://greatlakesplayscape.gymmasteronline.com/portal" class="btn btn-sun" target="_blank" rel="noopener">Become a member</a>
+      <a href="https://greatlakesplayscape.gymmasteronline.com/portal" class="btn btn-sun" target="_blank" rel="noopener">Book your play!</a>
       <a href="#pricing" class="btn btn-ghost">See prices</a>
+      <a href="parties/" class="btn btn-ghost">See party details</a>
     </div>
+   </div>
+    <aside class="hero-hours" id="hours">
+      <span class="hero-hours-label">Hours once we're open</span>
+      <div class="hero-hours-days">Open daily</div>
+      <div class="hero-hours-time">8 AM – 8 PM</div>
+      <p>Members and day pass visitors can come in any time we're open.</p>
+    </aside>
   </div>
   <div class="waves" aria-hidden="true">
     <svg viewBox="0 0 1440 120" preserveAspectRatio="none" style="width:100%;height:90px"><path fill="#FBFAF6" d="M0,64L60,58.7C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,64C1200,53,1320,43,1380,37.3L1440,32L1440,120L0,120Z"></path></svg>
@@ -126,46 +136,32 @@
 <!-- ============ THE SPACE ============ -->
 <section id="play">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">What's inside</span>
-      <h2>Room to run around, even in January</h2>
-      <p>Winters up here are long. This gives kids a warm place to burn off some energy and play with other kids, any time of year.</p>
-    </div>
     <div class="features">
+      <div class="card">
+        <img class="card-photo" src="images/photos/quiet-room.jpg" alt="Side room with a rocking chair, a barn mural, board books, baby toys and foam blocks" loading="lazy">
+        <h3>Parties</h3>
+        <p>Your event, your way. Book the party room or the entire facility.</p>
+        <a href="parties/" class="card-link">See party details →</a>
+      </div>
       <div class="card">
         <img class="card-photo" src="images/photos/climb.jpg" alt="Wooden climbing wall with rings, a cargo net, climbing holds and a ladder over crash mats" loading="lazy">
         <h3>Climb &amp; Explore</h3>
-        <p>A kid-sized climbing wall with rings, a cargo net, and a ladder, with crash mats underneath. There are soft foam blocks for the littler ones too.</p>
+        <p>Climb to new heights with the kid-sized climbing wall and treehouse. Our facility does have crash mats and padded flooring throughout our gross motor play areas.</p>
       </div>
       <div class="card">
         <img class="card-photo" src="images/photos/imagine.jpg" alt="Close-up of the red wooden fire truck with a maze panel and a toy fire helmet" loading="lazy">
         <h3>Play &amp; Imagine</h3>
-        <p>There's a fire truck, a playhouse, and a slide. Kids pretty much come up with the rest on their own.</p>
-      </div>
-      <div class="card">
-        <img class="card-photo" src="images/photos/quiet-room.jpg" alt="Side room with a rocking chair, a barn mural, board books, baby toys and foam blocks" loading="lazy">
-        <h3>Comfy for Grown-ups</h3>
-        <p>There's a comfy spot for parents too, with coffee and snacks close by. Sit down, talk to the other parents, and let the kids play.</p>
+        <p>There's a fire truck, a playhouse, a dress-up corner, and so much more. Kids pretty much come up with the rest on their own.</p>
       </div>
       <div class="card">
         <img class="card-photo" src="images/photos/entrance.jpg" alt="The Great Lakes Playscape logo on the glass front door" loading="lazy">
-        <h3>Members Come &amp; Go</h3>
-        <p>Members unlock the front door with an app, so you can come in whenever it works for you, around naps or whatever else your day looks like.</p>
+        <h3>Secure &amp; Convenient Access</h3>
+        <p>Members and day passers who have completed a waiver and payment may enter our space via the GymMaster app. Our facility is equipped with high-end cameras to ensure your safety. Parent supervision is required at all times.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ ABOUT / OUR STORY ============ -->
-<section id="about">
-  <div class="wrap about-flex">
-    <div>
-      <span class="eyebrow">Who we are</span>
-      <h2>We're a local family</h2>
-      <p>We're Wyatt and Claire Miller, and Great Lakes Playscape is our business. Between the two of us we've worked in education, child development, youth programs, and running a business. If you've got kids around here, you already know the problem: winter lasts forever and there aren't many indoor places where kids can really run around. So we decided to build one.</p>
-    </div>
-  </div>
-</section>
 
 <!-- ============ PRICING ============ -->
 <section id="pricing">
@@ -220,67 +216,6 @@
   </div>
 </section>
 
-<!-- ============ HOURS / SCHEDULE ============ -->
-<section id="hours">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Hours</span>
-      <h2>When we're open</h2>
-    </div>
-    <div class="hours-card">
-      <div class="hours-days">Open daily</div>
-      <div class="hours-time">8 AM – 8 PM</div>
-      <p>Members and day pass visitors can come in any time we're open.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PARTIES ============ -->
-<section id="parties">
-  <div class="wrap party-flex">
-    <div>
-      <span class="eyebrow" style="color:#fff;opacity:.85">Birthdays &amp; celebrations</span>
-      <h2>Have your kid's birthday party here.</h2>
-      <p>The kids get the whole playground to run around in, and you don't have to host it at your house.</p>
-      <div class="party-ctas">
-        <a href="mailto:hello@greatlakesplayscape.com?subject=Birthday%20party%20inquiry" class="btn btn-sun">Email to book a party</a>
-      </div>
-      <p class="party-fine">Party prices include sales tax. Email <a href="mailto:hello@greatlakesplayscape.com">hello@greatlakesplayscape.com</a> to check dates and book.</p>
-    </div>
-    <div class="party-card">
-      <img class="party-photo" src="images/photos/party.jpg" alt="The main play room with the playhouse, fire truck, tire swing and slide" loading="lazy">
-      <div class="row row-head"><span></span><span>Price</span><span>Members</span></div>
-      <div class="row"><span>Party Room<small>Up to 12 kids and 12 adults</small></span><span>$250</span><span>$200</span></div>
-      <div class="row"><span>Private Event<small>Up to 45 people</small></span><span>$350</span><span>$280</span></div>
-    </div>
-  </div>
-  <div class="wrap party-packages">
-    <div class="package">
-      <h3>Party Room</h3>
-      <p class="package-sub">Up to 12 kids and 12 adults</p>
-      <ul>
-        <li>2 hours in our private party room</li>
-        <li>Get into the room 30 minutes before and after to set up and pack up</li>
-        <li>The kids get the whole play space</li>
-        <li>We stay open to the public while you're here</li>
-        <li>Bring your own decorations and food</li>
-        <li>We do the cleaning</li>
-      </ul>
-    </div>
-    <div class="package">
-      <h3>Private Event</h3>
-      <p class="package-sub">Up to 45 people</p>
-      <ul>
-        <li>2 hours with the whole place to yourselves</li>
-        <li>We close to the public during your party</li>
-        <li>Get in 40 minutes before and after to set up and pack up</li>
-        <li>Bring your own decorations and food</li>
-        <li>We do the cleaning and help set up extra tables</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
 <!-- ============ VISIT ============ -->
 <section id="visit">
   <div class="wrap visit-grid">
@@ -313,10 +248,10 @@
       </div>
       <div class="foot-links">
         <a href="#play">The Space</a>
-        <a href="#about">Our Story</a>
         <a href="#pricing">Pricing</a>
         <a href="#hours">Hours</a>
-        <a href="#parties">Parties</a>
+        <a href="parties/">Parties</a>
+        <a href="faq/">FAQ</a>
         <a href="#visit">Contact Us</a>
         <a href="#join">Sign Up</a>
       </div>
