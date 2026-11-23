@@ -106,10 +106,11 @@ section{padding:76px 0}
   .features{grid-template-columns:repeat(6,1fr)}
   .features .card{grid-column:span 2}
   .features .card:nth-child(n+4){grid-column:span 3}
-  .features .card:nth-child(n+4) .card-photo{height:200px}
+  /* Wider bottom-row cards show their photos uncropped (the photos are 1200x650) */
+  .features .card:nth-child(n+4) .card-photo{height:auto;aspect-ratio:1200/650}
 }
-/* Keep the rocking chair's top in frame instead of cropping to the middle */
-.card-photo.photo-top{object-position:center 40%}
+/* Babies and Toddlers photo is shown whole at every size so the room doesn't get cut off */
+.card-photo.photo-full{height:auto;aspect-ratio:1200/650}
 @media(min-width:600px) and (max-width:899px){
   .features{grid-template-columns:repeat(2,1fr)}
   .features .card:last-child{grid-column:span 2}
