@@ -152,6 +152,7 @@ section{padding:76px 0}
 .party-flex{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
 .party-flex h2,.party-flex h1{font-size:clamp(1.8rem,4vw,2.6rem)}
 .party-back{text-align:center;margin-top:40px}
+.not-found-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
 .party-flex p{font-size:1.1rem;color:#34505f;margin:14px 0 24px}
 .party-card{background:#fff;border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
 .party-photo{width:100%;height:170px;object-fit:cover;display:block;border-radius:14px;margin-bottom:20px}
