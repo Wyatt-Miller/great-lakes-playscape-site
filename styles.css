@@ -101,6 +101,19 @@ section{padding:76px 0}
 
 /* Features */
 .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+/* Five cards: 3 + 2 on desktop, 2 + 2 + 1 (last one full width) on tablets */
+@media(min-width:900px){
+  .features{grid-template-columns:repeat(6,1fr)}
+  .features .card{grid-column:span 2}
+  .features .card:nth-child(n+4){grid-column:span 3}
+  .features .card:nth-child(n+4) .card-photo{height:200px}
+}
+/* Keep the rocking chair's top in frame instead of cropping to the middle */
+.card-photo.photo-top{object-position:center 40%}
+@media(min-width:600px) and (max-width:899px){
+  .features{grid-template-columns:repeat(2,1fr)}
+  .features .card:last-child{grid-column:span 2}
+}
 .card{background:#fff;border-radius:var(--radius);padding:32px 28px;box-shadow:var(--shadow);border:1px solid rgba(18,59,92,.05);transition:transform .18s ease;overflow:hidden}
 .card:hover{transform:translateY(-4px)}
 .card-photo{width:calc(100% + 56px);max-width:none;height:150px;object-fit:cover;display:block;margin:-32px -28px 18px -28px}
