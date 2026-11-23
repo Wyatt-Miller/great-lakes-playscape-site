@@ -166,6 +166,11 @@ section{padding:76px 0}
 .visit-info li{display:flex;gap:14px;align-items:flex-start}
 .visit-info .ico{font-size:1.4rem;flex:none;width:40px;height:40px;background:var(--sky);border-radius:12px;display:grid;place-items:center}
 .visit-info strong{color:var(--deep);display:block}
+/* Contact links under "Get in touch": one per line, each with its own small icon */
+.visit-info .visit-contacts{list-style:none;display:flex;flex-direction:column;gap:6px;margin-top:2px}
+.visit-info .visit-contacts li{display:block}
+.visit-contacts a{display:inline-flex;align-items:center;gap:8px}
+.visit-contacts svg{flex:none}
 .map-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;height:320px;border:1px solid rgba(18,59,92,.06)}
 .map-card iframe{display:block}
 @media(max-width:720px){.visit-grid{grid-template-columns:1fr}}
