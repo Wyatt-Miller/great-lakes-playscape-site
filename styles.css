@@ -40,6 +40,11 @@ header{position:sticky;top:0;z-index:50;background:rgba(251,250,246,.9);backdrop
 .header-social{display:flex;gap:10px;margin-top:3px}
 .header-social a{color:var(--wave);display:flex}
 .header-social a:hover{color:var(--deep)}
+/* Bigger social icons on phones and tablets, where the menu collapses and there's room beside the logo */
+@media(max-width:1080px){
+  .header-social{gap:16px;margin-top:0}
+  .header-social svg{width:26px;height:26px}
+}
 .nav-links{display:flex;gap:28px;align-items:center}
 .nav-links a{text-decoration:none;font-weight:700;color:var(--deep);font-size:.98rem}
 .nav-links a.cta{background:var(--deep);color:#fff;padding:10px 20px;border-radius:999px}
